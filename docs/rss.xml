@@ -1,5 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog</title><link>https://xpfcom.github.io/blog</link><description>✌️ 随笔小记🔸技术分享</description><copyright>x-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/xpfcom/blog/refs/heads/main/logo.svg</url><title>avatar</title><link>https://xpfcom.github.io/blog</link></image><lastBuildDate>Wed, 16 Apr 2025 15:39:27 +0000</lastBuildDate><managingEditor>x-Blog</managingEditor><ttl>60</ttl><webMaster>x-Blog</webMaster><item><title>openwrt 插件对照表</title><link>https://xpfcom.github.io/blog/post/openwrt%20-cha-jian-dui-zhao-biao.html</link><description>- openwrt 插件对照表
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog</title><link>https://xpfcom.github.io/blog</link><description>✌️ 随笔小记🔸技术分享</description><copyright>x-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/xpfcom/blog/refs/heads/main/logo.svg</url><title>avatar</title><link>https://xpfcom.github.io/blog</link></image><lastBuildDate>Wed, 16 Apr 2025 15:40:20 +0000</lastBuildDate><managingEditor>x-Blog</managingEditor><ttl>60</ttl><webMaster>x-Blog</webMaster><item><title>VPS 常用脚本汇总</title><link>https://xpfcom.github.io/blog/post/VPS%20-chang-yong-jiao-ben-hui-zong.html</link><description>### **测评类**
+[IP质量体检脚本](https://github.com/xykt/IPQuality)
+```
+bash &lt;(curl -Ls IP.Check.Place)
+```
+
+[VPS融合怪服务器测评脚本](https://github.com/spiritLHLS/ecs)
+```
+curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh &amp;&amp; chmod +x ecs.sh &amp;&amp; bash ecs.sh -m 1
+```
+
+[检测VPS内存是否超售的一键脚本](https://github.com/uselibrary/memoryCheck)
+```
+curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh | bash
+```
+
+### **工具类**
+[vps一键脚本工具](https://github.com/eooce/ssh_tool)
+```
+curl -fsSL https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh -o ssh_tool.sh &amp;&amp; chmod +x ssh_tool.sh &amp;&amp; ./ssh_tool.sh
+```
+
+### **部署类**
+[xeefei/3x-ui](https://github.com/xeefei/3x-ui)
+```
+bash &lt;(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
+```。</description><guid isPermaLink="true">https://xpfcom.github.io/blog/post/VPS%20-chang-yong-jiao-ben-hui-zong.html</guid><pubDate>Wed, 16 Apr 2025 15:39:53 +0000</pubDate></item><item><title>openwrt 插件对照表</title><link>https://xpfcom.github.io/blog/post/openwrt%20-cha-jian-dui-zhao-biao.html</link><description>- openwrt 插件对照表
 
 | 软件名                       | 说明                   | 中文说明    |
 | -----------------------------|------------------------| ------------|
