@@ -1,5 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog</title><link>https://xpfcom.github.io/blog</link><description>✌️ 随笔小记🔸技术分享</description><copyright>x-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/xpfcom/blog/refs/heads/main/logo.svg</url><title>avatar</title><link>https://xpfcom.github.io/blog</link></image><lastBuildDate>Wed, 16 Apr 2025 15:40:20 +0000</lastBuildDate><managingEditor>x-Blog</managingEditor><ttl>60</ttl><webMaster>x-Blog</webMaster><item><title>VPS 常用脚本汇总</title><link>https://xpfcom.github.io/blog/post/VPS%20-chang-yong-jiao-ben-hui-zong.html</link><description>### **测评类**
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog</title><link>https://xpfcom.github.io/blog</link><description>✌️ 随笔小记🔸技术分享</description><copyright>x-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/xpfcom/blog/refs/heads/main/logo.svg</url><title>avatar</title><link>https://xpfcom.github.io/blog</link></image><lastBuildDate>Wed, 16 Apr 2025 15:40:50 +0000</lastBuildDate><managingEditor>x-Blog</managingEditor><ttl>60</ttl><webMaster>x-Blog</webMaster><item><title>在线小工具</title><link>https://xpfcom.github.io/blog/post/zai-xian-xiao-gong-ju.html</link><description>### **一、 [独特工具箱](https://www.dute.org)**
+
+### **二、 [UU在线工具](https://uutool.cn)**
+
+### **三、 [魔方工具箱](http://www.mf2.cn)**
+
+### **四、 [在线工具箱](https://tools.flspt.com)**
+
+### **五、 [PDF24](https://tools.pdf24.org/zh)**
+
+### **六、 [Tools-Web](https://tools.ranblogs.com)**
+
+### **七、 [前端工具箱](https://beta.lingdaima.com)**
+
+### **八、 [奇迹秀工具箱](https://www.qijishow.com/down/index.html)**
+
+### **九、 [果核剥壳](https://www.ghxi.com)**
+
+### **十、 [工具站搭建教程](https://echeverra.cn/web-tool)**
+
+### **十一、 [77工具箱](https://www.tool77.com)**
+
+### **十二、 [小蚂蚁工具箱](https://anttoolbox.cn)**
+
+### **十三、 [孟坤工具箱](https://tool.mkblog.cn)**。</description><guid isPermaLink="true">https://xpfcom.github.io/blog/post/zai-xian-xiao-gong-ju.html</guid><pubDate>Wed, 16 Apr 2025 15:40:18 +0000</pubDate></item><item><title>VPS 常用脚本汇总</title><link>https://xpfcom.github.io/blog/post/VPS%20-chang-yong-jiao-ben-hui-zong.html</link><description>### **测评类**
 [IP质量体检脚本](https://github.com/xykt/IPQuality)
 ```
 bash &lt;(curl -Ls IP.Check.Place)
