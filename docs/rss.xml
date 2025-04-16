@@ -1,2 +1,69 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Meekdai.github.io/Gmeek-template</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Meekdai.github.io/Gmeek-template</link></image><lastBuildDate>Thu, 14 Mar 2024 09:17:29 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>请接着之后的安装步骤执行</title><link>https://Meekdai.github.io/Gmeek-template/post/qing-jie-zhao-zhi-hou-de-an-zhuang-bu-zou-zhi-xing.html</link><description>如果你点击了`READM.md`的链接后，看到了这个页面，请继续之后的安装步骤执行。</description><guid isPermaLink="true">https://Meekdai.github.io/Gmeek-template/post/qing-jie-zhao-zhi-hou-de-an-zhuang-bu-zou-zhi-xing.html</guid><pubDate>Thu, 14 Mar 2024 09:15:10 +0000</pubDate></item><item><title>这是Gmeek模板仓库</title><link>https://Meekdai.github.io/Gmeek-template/post/zhe-shi-Gmeek-mo-ban-cang-ku.html</link><description>通过这个模板创建库，可以大大减少部署Gmeek博客的配置步骤。</description><guid isPermaLink="true">https://Meekdai.github.io/Gmeek-template/post/zhe-shi-Gmeek-mo-ban-cang-ku.html</guid><pubDate>Wed, 20 Dec 2023 07:42:24 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://xpfcom.github.io/blog.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://xpfcom.github.io/blog.github.io</link></image><lastBuildDate>Wed, 16 Apr 2025 15:05:19 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>cloudflare Tunnels &amp; R2S ImmortalWrt 实践分享</title><link>https://xpfcom.github.io/blog.github.io/post/cloudflare%20Tunnels%20%26%20R2S%20ImmortalWrt%20-shi-jian-fen-xiang.html</link><description>## cloudflare：点击Zero Trust→点击Networks→点击Tunnels→点击+Create a tunnel→选择Cloudflared→点击Next
+_________________________________
+
+## 隧道名称：Tunnel 1
+
+#### 1、隧道握手码（备注）：
+```
+++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++
+```
+
+_________________________________
+
+#### 2、OpenWrt安装程序
+项目地址：https://github.com/cloudflare/cloudflared/releases/（如更新 替换下方代码日期）
+```
+VERSION='2024.6.1'
+curl -O -L \
+https://github.com/cloudflare/cloudflared/releases/download/${VERSION}/cloudflared-linux-arm64 \
+&amp;&amp; chmod +x cloudflared-linux-arm64 \
+&amp;&amp; mv cloudflared-linux-arm64 /usr/bin/cloudflared
+```
+
+_________________________________
+
+#### 3、创建文件 赋予可执行权限
+```
+touch /etc/init.d/cloudflared
+chmod +x /etc/init.d/cloudflared
+```
+
+_________________________________
+
+#### 4、SSH替换 /ect/init.d/cloudflare 文件代码
+```
+#!/bin/sh /etc/rc.common
+USE_PROCD=1
+START=95
+STOP=01
+cfd_init='/etc/init.d/cloudflared'
+cfd_token='++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++'
+boot()
+{
+ubus -t 30 wait_for network.interface network.loopback 2&gt;/dev/null
+rc_procd start_service
+}
+start_service() {
+if [ $('${cfd_init}' enabled; printf '%u' ${?}) -eq 0 ]
+then
+procd_open_instance
+procd_set_param command /usr/bin/cloudflared --no-autoupdate tunnel run --token ${cfd_token}
+procd_set_param stdout 1
+procd_set_param stderr 1
+procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
+procd_close_instance
+fi
+}
+stop_service() {
+pidof cloudflared &amp;&amp; kill -SIGINT `pidof cloudflared`
+}
+```
+
+_________________________________
+
+##### 5、设置 cloudflared 文件开机启动 运行 cloudflared 文件
+```
+/etc/init.d/cloudflared enable
+/etc/init.d/cloudflared start
+```。</description><guid isPermaLink="true">https://xpfcom.github.io/blog.github.io/post/cloudflare%20Tunnels%20%26%20R2S%20ImmortalWrt%20-shi-jian-fen-xiang.html</guid><pubDate>Wed, 16 Apr 2025 14:59:56 +0000</pubDate></item></channel></rss>
