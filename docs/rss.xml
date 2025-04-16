@@ -1,5 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog</title><link>https://xpfcom.github.io/blog</link><description>✌️ 随笔小记🔸技术分享</description><copyright>x-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/xpfcom/blog/refs/heads/main/logo.svg</url><title>avatar</title><link>https://xpfcom.github.io/blog</link></image><lastBuildDate>Wed, 16 Apr 2025 15:37:44 +0000</lastBuildDate><managingEditor>x-Blog</managingEditor><ttl>60</ttl><webMaster>x-Blog</webMaster><item><title>cloudflare Tunnels &amp; R2S ImmortalWrt 实践分享</title><link>https://xpfcom.github.io/blog/post/cloudflare%20Tunnels%20%26%20R2S%20ImmortalWrt%20-shi-jian-fen-xiang.html</link><description>## cloudflare：点击Zero Trust→点击Networks→点击Tunnels→点击+Create a tunnel→选择Cloudflared→点击Next
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog</title><link>https://xpfcom.github.io/blog</link><description>✌️ 随笔小记🔸技术分享</description><copyright>x-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/xpfcom/blog/refs/heads/main/logo.svg</url><title>avatar</title><link>https://xpfcom.github.io/blog</link></image><lastBuildDate>Wed, 16 Apr 2025 15:39:27 +0000</lastBuildDate><managingEditor>x-Blog</managingEditor><ttl>60</ttl><webMaster>x-Blog</webMaster><item><title>openwrt 插件对照表</title><link>https://xpfcom.github.io/blog/post/openwrt%20-cha-jian-dui-zhao-biao.html</link><description>- openwrt 插件对照表
+
+| 软件名                       | 说明                   | 中文说明    |
+| -----------------------------|------------------------| ------------|
+| luci-app-alist               |  file list program   | 支持多存储的文件列表程序   |
+| luci-app-advanced            | System advanced settings               | 系统高级设置        |
+| luci-app-adguardhome         | Block adg          |  AdG去广告      |
+| luci-theme-atmaterial_new    | atmaterial theme (adapted to luci-18.06) | Atmaterial 三合一主题        |
+| luci-theme-argone            | argone theme           | 修改老竭力主题名     |
+| luci-app-argone-config       | argone theme settings            |  argone主题设置      |
+| luci-app-aliddns             | aliyunddns         |   阿里云ddns插件      |
+| luci-app-aliyundrive-webdav  | Aliyun Disk WebDAV Service            |  阿里云盘 WebDAV 服务   |
+| luci-app-dnsfilter           | dns ad filtering            | 基于DNS的广告过滤        |
+| luci-theme-design            | design theme          | design 主题        |
+| luci-app-amlogic             | Amlogic Service             |  晶晨宝盒   |
+| luci-app-eqos                | Speed ​​limit by IP address       | 依IP地址限速      |
+| luci-app-gost                | https proxy      | 隐蔽的https代理   |
+| luci-app-openclash           | openclash proxy            |  clash的图形代理软件      |
+| luci-app-passwall            | passwall proxy      | passwall代理软件        |
+| luci-app-wechatpush          | WeChat/DingTalk Pushed plugins    |   微信/钉钉推送        |
+| luci-theme-tomato            | Modify topic name             |  tomato主题        |
+| luci-app-smartdns            | smartdns dns pollution prevention     |  smartdns DNS防污染       |
+| luci-app-ssr-plus            | ssr-plus proxy              | ssr-plus 代理软件       |
+| luci-app-store               | store software repository            |  应用商店   |
+| luci-theme-mcat              | Modify topic name          |   mcat主题        |
+| luci-app-mosdns              | mosdns dns offload            |DNS 国内外分流解析与广告过滤        |
+| luci-app-unblockneteasemusic | Unlock NetEase Cloud Music         | 解锁网易云音乐   |
+| luci-app-homeproxy           | homeproxy  proxy        | homeproxy 代理   |。</description><guid isPermaLink="true">https://xpfcom.github.io/blog/post/openwrt%20-cha-jian-dui-zhao-biao.html</guid><pubDate>Wed, 16 Apr 2025 15:38:59 +0000</pubDate></item><item><title>cloudflare Tunnels &amp; R2S ImmortalWrt 实践分享</title><link>https://xpfcom.github.io/blog/post/cloudflare%20Tunnels%20%26%20R2S%20ImmortalWrt%20-shi-jian-fen-xiang.html</link><description>## cloudflare：点击Zero Trust→点击Networks→点击Tunnels→点击+Create a tunnel→选择Cloudflared→点击Next
 _________________________________
 
 ## 隧道名称：Tunnel 1
