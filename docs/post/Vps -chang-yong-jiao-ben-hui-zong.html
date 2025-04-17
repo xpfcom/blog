@@ -10,147 +10,65 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="## cloudflare：点击Zero Trust→点击Networks→点击Tunnels→点击+Create a tunnel→选择Cloudflared→点击Next
-_________________________________
-
-## 隧道名称：Tunnel 1
-
-#### 1、隧道握手码（备注）：
+<meta name="description" content="### **测评类**
+[IP质量体检脚本](https://github.com/xykt/IPQuality)
 ```
-++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++
+bash <(curl -Ls IP.Check.Place)
 ```
 
-_________________________________
-
-#### 2、OpenWrt安装程序
-项目地址：https://github.com/cloudflare/cloudflared/releases/（如更新 替换下方代码日期）
+[VPS融合怪服务器测评脚本](https://github.com/spiritLHLS/ecs)
 ```
-VERSION='2024.6.1'
-curl -O -L \
-https://github.com/cloudflare/cloudflared/releases/download/${VERSION}/cloudflared-linux-arm64 \
-&& chmod +x cloudflared-linux-arm64 \
-&& mv cloudflared-linux-arm64 /usr/bin/cloudflared
+curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh -m 1
 ```
 
-_________________________________
-
-#### 3、创建文件 赋予可执行权限
+[检测VPS内存是否超售的一键脚本](https://github.com/uselibrary/memoryCheck)
 ```
-touch /etc/init.d/cloudflared
-chmod +x /etc/init.d/cloudflared
+curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh | bash
 ```
 
-_________________________________
-
-#### 4、SSH替换 /ect/init.d/cloudflare 文件代码
+### **工具类**
+[vps一键脚本工具](https://github.com/eooce/ssh_tool)
 ```
-#!/bin/sh /etc/rc.common
-USE_PROCD=1
-START=95
-STOP=01
-cfd_init='/etc/init.d/cloudflared'
-cfd_token='++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++'
-boot()
-{
-ubus -t 30 wait_for network.interface network.loopback 2>/dev/null
-rc_procd start_service
-}
-start_service() {
-if [ $('${cfd_init}' enabled; printf '%u' ${?}) -eq 0 ]
-then
-procd_open_instance
-procd_set_param command /usr/bin/cloudflared --no-autoupdate tunnel run --token ${cfd_token}
-procd_set_param stdout 1
-procd_set_param stderr 1
-procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
-procd_close_instance
-fi
-}
-stop_service() {
-pidof cloudflared && kill -SIGINT `pidof cloudflared`
-}
+curl -fsSL https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh -o ssh_tool.sh && chmod +x ssh_tool.sh && ./ssh_tool.sh
 ```
 
-_________________________________
-
-##### 5、设置 cloudflared 文件开机启动 运行 cloudflared 文件
+### **部署类**
+[xeefei/3x-ui](https://github.com/xeefei/3x-ui)
 ```
-/etc/init.d/cloudflared enable
-/etc/init.d/cloudflared start
+bash <(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
 ```。">
-<meta property="og:title" content="cloudflare Tunnels & R2S ImmortalWrt 实践分享">
-<meta property="og:description" content="## cloudflare：点击Zero Trust→点击Networks→点击Tunnels→点击+Create a tunnel→选择Cloudflared→点击Next
-_________________________________
-
-## 隧道名称：Tunnel 1
-
-#### 1、隧道握手码（备注）：
+<meta property="og:title" content="Vps 常用脚本汇总">
+<meta property="og:description" content="### **测评类**
+[IP质量体检脚本](https://github.com/xykt/IPQuality)
 ```
-++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++
+bash <(curl -Ls IP.Check.Place)
 ```
 
-_________________________________
-
-#### 2、OpenWrt安装程序
-项目地址：https://github.com/cloudflare/cloudflared/releases/（如更新 替换下方代码日期）
+[VPS融合怪服务器测评脚本](https://github.com/spiritLHLS/ecs)
 ```
-VERSION='2024.6.1'
-curl -O -L \
-https://github.com/cloudflare/cloudflared/releases/download/${VERSION}/cloudflared-linux-arm64 \
-&& chmod +x cloudflared-linux-arm64 \
-&& mv cloudflared-linux-arm64 /usr/bin/cloudflared
+curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh -m 1
 ```
 
-_________________________________
-
-#### 3、创建文件 赋予可执行权限
+[检测VPS内存是否超售的一键脚本](https://github.com/uselibrary/memoryCheck)
 ```
-touch /etc/init.d/cloudflared
-chmod +x /etc/init.d/cloudflared
+curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh | bash
 ```
 
-_________________________________
-
-#### 4、SSH替换 /ect/init.d/cloudflare 文件代码
+### **工具类**
+[vps一键脚本工具](https://github.com/eooce/ssh_tool)
 ```
-#!/bin/sh /etc/rc.common
-USE_PROCD=1
-START=95
-STOP=01
-cfd_init='/etc/init.d/cloudflared'
-cfd_token='++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++'
-boot()
-{
-ubus -t 30 wait_for network.interface network.loopback 2>/dev/null
-rc_procd start_service
-}
-start_service() {
-if [ $('${cfd_init}' enabled; printf '%u' ${?}) -eq 0 ]
-then
-procd_open_instance
-procd_set_param command /usr/bin/cloudflared --no-autoupdate tunnel run --token ${cfd_token}
-procd_set_param stdout 1
-procd_set_param stderr 1
-procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
-procd_close_instance
-fi
-}
-stop_service() {
-pidof cloudflared && kill -SIGINT `pidof cloudflared`
-}
+curl -fsSL https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh -o ssh_tool.sh && chmod +x ssh_tool.sh && ./ssh_tool.sh
 ```
 
-_________________________________
-
-##### 5、设置 cloudflared 文件开机启动 运行 cloudflared 文件
+### **部署类**
+[xeefei/3x-ui](https://github.com/xeefei/3x-ui)
 ```
-/etc/init.d/cloudflared enable
-/etc/init.d/cloudflared start
+bash <(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
 ```。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://blog.x1661.com/post/cloudflare%20Tunnels%20%26%20R2S%20ImmortalWrt%20-shi-jian-fen-xiang.html">
+<meta property="og:url" content="http://blog.x1661.com/post/Vps%20-chang-yong-jiao-ben-hui-zong.html">
 <meta property="og:image" content="https://raw.githubusercontent.com/xpfcom/blog/refs/heads/main/logo.svg">
-<title>cloudflare Tunnels & R2S ImmortalWrt 实践分享</title>
+<title>Vps 常用脚本汇总</title>
 
 
 
@@ -193,7 +111,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">cloudflare Tunnels & R2S ImmortalWrt 实践分享</h1>
+<h1 class="postTitle">Vps 常用脚本汇总</h1>
 <div class="title-right">
     <a href="http://blog.x1661.com" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -201,7 +119,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/xpfcom/blog/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/xpfcom/blog/issues/4" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -217,58 +135,23 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2>cloudflare：点击Zero Trust→点击Networks→点击Tunnels→点击+Create a tunnel→选择Cloudflared→点击Next</h2>
-<hr>
-<h2>隧道名称：Tunnel 1</h2>
-<h4>1、隧道握手码（备注）：</h4>
-<pre class="notranslate"><code class="notranslate">++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++
+<div class="markdown-body" id="postBody"><h3><strong>测评类</strong></h3>
+<p><a href="https://github.com/xykt/IPQuality">IP质量体检脚本</a></p>
+<pre class="notranslate"><code class="notranslate">bash &lt;(curl -Ls IP.Check.Place)
 </code></pre>
-<hr>
-<h4>2、OpenWrt安装程序</h4>
-<p>项目地址：<a href="https://github.com/cloudflare/cloudflared/releases/%EF%BC%88%E5%A6%82%E6%9B%B4%E6%96%B0">https://github.com/cloudflare/cloudflared/releases/（如更新</a> 替换下方代码日期）</p>
-<pre class="notranslate"><code class="notranslate">VERSION="2024.6.1"
-curl -O -L \
-https://github.com/cloudflare/cloudflared/releases/download/${VERSION}/cloudflared-linux-arm64 \
-&amp;&amp; chmod +x cloudflared-linux-arm64 \
-&amp;&amp; mv cloudflared-linux-arm64 /usr/bin/cloudflared
+<p><a href="https://github.com/spiritLHLS/ecs">VPS融合怪服务器测评脚本</a></p>
+<pre class="notranslate"><code class="notranslate">curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh &amp;&amp; chmod +x ecs.sh &amp;&amp; bash ecs.sh -m 1
 </code></pre>
-<hr>
-<h4>3、创建文件 赋予可执行权限</h4>
-<pre class="notranslate"><code class="notranslate">touch /etc/init.d/cloudflared
-chmod +x /etc/init.d/cloudflared
+<p><a href="https://github.com/uselibrary/memoryCheck">检测VPS内存是否超售的一键脚本</a></p>
+<pre class="notranslate"><code class="notranslate">curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh | bash
 </code></pre>
-<hr>
-<h4>4、SSH替换 /ect/init.d/cloudflare 文件代码</h4>
-<pre class="notranslate"><code class="notranslate">#!/bin/sh /etc/rc.common
-USE_PROCD=1
-START=95
-STOP=01
-cfd_init="/etc/init.d/cloudflared"
-cfd_token="++eyJhIjoiNWVjMDk2OGYyNTUzMmJhZDg4ODRhZTI5ZjhNThjNjAiLCJ0IjoiNTNmZWEzOGEtNDMwMy00YzgzLThkNDMtNzE3ZTlkYTNjYjI3IiwicyI6IlpUWTFNMlJoWkRRdFpEVmtOUzAwTVRFMkxXRmhaVGt0WmpKbU1UUXhOMk5tTnpOayJ9++"
-boot()
-{
-ubus -t 30 wait_for network.interface network.loopback 2&gt;/dev/null
-rc_procd start_service
-}
-start_service() {
-if [ $("${cfd_init}" enabled; printf "%u" ${?}) -eq 0 ]
-then
-procd_open_instance
-procd_set_param command /usr/bin/cloudflared --no-autoupdate tunnel run --token ${cfd_token}
-procd_set_param stdout 1
-procd_set_param stderr 1
-procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
-procd_close_instance
-fi
-}
-stop_service() {
-pidof cloudflared &amp;&amp; kill -SIGINT `pidof cloudflared`
-}
+<h3><strong>工具类</strong></h3>
+<p><a href="https://github.com/eooce/ssh_tool">vps一键脚本工具</a></p>
+<pre class="notranslate"><code class="notranslate">curl -fsSL https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh -o ssh_tool.sh &amp;&amp; chmod +x ssh_tool.sh &amp;&amp; ./ssh_tool.sh
 </code></pre>
-<hr>
-<h5>5、设置 cloudflared 文件开机启动 运行 cloudflared 文件</h5>
-<pre class="notranslate"><code class="notranslate">/etc/init.d/cloudflared enable
-/etc/init.d/cloudflared start
+<h3><strong>部署类</strong></h3>
+<p><a href="https://github.com/xeefei/3x-ui">xeefei/3x-ui</a></p>
+<pre class="notranslate"><code class="notranslate">bash &lt;(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">随意转载</div>
 
