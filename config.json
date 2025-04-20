@@ -6,8 +6,10 @@
     "startSite":"04/16/2025",
     "i18n":"CN",
     "UTC":8,
+    "onePageListNum":10,
     "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script>",
     "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
     "homeUrl":"http://blog.x1661.com",
+    "email":"xpfcom@gmail.com",
     "bottomText":"随意转载"
 }
