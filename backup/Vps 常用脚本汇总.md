@@ -20,6 +20,11 @@ curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.s
 curl -fsSL https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh -o ssh_tool.sh && chmod +x ssh_tool.sh && ./ssh_tool.sh
 ```
 
+[科技 Lion 脚本工具箱](https://kejilion.sh/)
+```
+bash <(curl -sL kejilion.sh)
+```
+
 ### **部署类**
 [xeefei/3x-ui](https://github.com/xeefei/3x-ui)
 ```
