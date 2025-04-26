@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog🍃</title><link>http://blog.x1661.com</link><description>🌱 I’m currently learning ...</description><copyright>x-Blog🍃</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://blog.x1661.com/logo.svg</url><title>avatar</title><link>http://blog.x1661.com</link></image><lastBuildDate>Sat, 26 Apr 2025 01:02:24 +0000</lastBuildDate><managingEditor>x-Blog🍃</managingEditor><ttl>60</ttl><webMaster>x-Blog🍃</webMaster><item><title>资源导航 持续更新</title><link>http://blog.x1661.com/post/zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</link><description>追剧猫 ▶️https://www.feiwang.cc/zjm/
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog🍃</title><link>http://blog.x1661.com</link><description>🌱 I’m currently learning ...</description><copyright>x-Blog🍃</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://blog.x1661.com/logo.svg</url><title>avatar</title><link>http://blog.x1661.com</link></image><lastBuildDate>Sat, 26 Apr 2025 06:16:03 +0000</lastBuildDate><managingEditor>x-Blog🍃</managingEditor><ttl>60</ttl><webMaster>x-Blog🍃</webMaster><item><title>资源导航 持续更新</title><link>http://blog.x1661.com/post/zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</link><description>追剧猫 ▶️https://www.feiwang.cc/zjm/
 注视影视 ▶️https://gaze.run/
 No视频 ▶️https://www.novipnoad.net/
 西瓜影院 ▶️https://www.a6club.com/
@@ -94,6 +94,11 @@ bash &lt;(curl -sL kejilion.sh)
 [xeefei/3x-ui](https://github.com/xeefei/3x-ui)
 ```
 bash &lt;(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
+```
+
+[宝塔面板 Debian](https://www.bt.cn/new/download.html)
+```
+wget -O install_panel.sh https://download.bt.cn/install/install_panel.sh &amp;&amp; bash install_panel.sh ed8484bec
 ```。</description><guid isPermaLink="true">http://blog.x1661.com/post/fu-wu-qi-chang-yong-jiao-ben.html</guid><pubDate>Wed, 16 Apr 2025 15:39:53 +0000</pubDate></item><item><title>OpenWrt 插件安装对照表</title><link>http://blog.x1661.com/post/OpenWrt%20-cha-jian-an-zhuang-dui-zhao-biao.html</link><description>1、登录路由器后台-系统-软件包-点击更新opkg包
 2、按照下面选择你想要的插件路由器后台搜索luci-app-你想要插件包名安装即可。</description><guid isPermaLink="true">http://blog.x1661.com/post/OpenWrt%20-cha-jian-an-zhuang-dui-zhao-biao.html</guid><pubDate>Wed, 16 Apr 2025 15:39:30 +0000</pubDate></item><item><title>OpenWrt 插件对照表</title><link>http://blog.x1661.com/post/OpenWrt%20-cha-jian-dui-zhao-biao.html</link><description>- openwrt 插件对照表
 
