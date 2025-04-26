@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog🍃</title><link>http://blog.x1661.com</link><description>🌱 I’m currently learning ...</description><copyright>x-Blog🍃</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://blog.x1661.com/logo.svg</url><title>avatar</title><link>http://blog.x1661.com</link></image><lastBuildDate>Sat, 26 Apr 2025 06:16:03 +0000</lastBuildDate><managingEditor>x-Blog🍃</managingEditor><ttl>60</ttl><webMaster>x-Blog🍃</webMaster><item><title>资源导航 持续更新</title><link>http://blog.x1661.com/post/zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</link><description>追剧猫 ▶️https://www.feiwang.cc/zjm/
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog🍃</title><link>http://blog.x1661.com</link><description>🌱 I’m currently learning ...</description><copyright>x-Blog🍃</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://blog.x1661.com/logo.svg</url><title>avatar</title><link>http://blog.x1661.com</link></image><lastBuildDate>Sat, 26 Apr 2025 10:43:19 +0000</lastBuildDate><managingEditor>x-Blog🍃</managingEditor><ttl>60</ttl><webMaster>x-Blog🍃</webMaster><item><title>资源导航 持续更新</title><link>http://blog.x1661.com/post/zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</link><description>追剧猫 ▶️https://www.feiwang.cc/zjm/
 注视影视 ▶️https://gaze.run/
 No视频 ▶️https://www.novipnoad.net/
 西瓜影院 ▶️https://www.a6club.com/
@@ -64,39 +64,39 @@ Hdmoli ▶️https://www.hdmoli.pro/
 ### **十二、 [小蚂蚁工具箱](https://anttoolbox.cn)**
 
 ### **十三、 [孟坤工具箱](https://tool.mkblog.cn)**。</description><guid isPermaLink="true">http://blog.x1661.com/post/zai-xian-xiao-gong-ju.html</guid><pubDate>Wed, 16 Apr 2025 15:40:18 +0000</pubDate></item><item><title>服务器常用脚本</title><link>http://blog.x1661.com/post/fu-wu-qi-chang-yong-jiao-ben.html</link><description>### **测评类**
-[IP质量体检脚本](https://github.com/xykt/IPQuality)
+- [IP质量体检脚本](https://github.com/xykt/IPQuality)
 ```
 bash &lt;(curl -Ls IP.Check.Place)
 ```
 
-[VPS融合怪服务器测评脚本](https://github.com/spiritLHLS/ecs)
+- [VPS融合怪服务器测评脚本](https://github.com/spiritLHLS/ecs)
 ```
 curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh &amp;&amp; chmod +x ecs.sh &amp;&amp; bash ecs.sh -m 1
 ```
 
-[检测VPS内存是否超售的一键脚本](https://github.com/uselibrary/memoryCheck)
+- [检测VPS内存是否超售的一键脚本](https://github.com/uselibrary/memoryCheck)
 ```
 curl https://raw.githubusercontent.com/uselibrary/memoryCheck/main/memoryCheck.sh | bash
 ```
 
 ### **工具类**
-[vps一键脚本工具](https://github.com/eooce/ssh_tool)
+- [vps一键脚本工具](https://github.com/eooce/ssh_tool)
 ```
 curl -fsSL https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh -o ssh_tool.sh &amp;&amp; chmod +x ssh_tool.sh &amp;&amp; ./ssh_tool.sh
 ```
 
-[科技 Lion 脚本工具箱](https://kejilion.sh/)
+- [科技 Lion 脚本工具箱](https://kejilion.sh/)
 ```
 bash &lt;(curl -sL kejilion.sh)
 ```
 
 ### **部署类**
-[xeefei/3x-ui](https://github.com/xeefei/3x-ui)
+- [xeefei/3x-ui](https://github.com/xeefei/3x-ui)
 ```
 bash &lt;(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
 ```
 
-[宝塔面板 Debian](https://www.bt.cn/new/download.html)
+- [宝塔面板 Debian](https://www.bt.cn/new/download.html)
 ```
 wget -O install_panel.sh https://download.bt.cn/install/install_panel.sh &amp;&amp; bash install_panel.sh ed8484bec
 ```。</description><guid isPermaLink="true">http://blog.x1661.com/post/fu-wu-qi-chang-yong-jiao-ben.html</guid><pubDate>Wed, 16 Apr 2025 15:39:53 +0000</pubDate></item><item><title>OpenWrt 插件安装对照表</title><link>http://blog.x1661.com/post/OpenWrt%20-cha-jian-an-zhuang-dui-zhao-biao.html</link><description>1、登录路由器后台-系统-软件包-点击更新opkg包
