@@ -1,19 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog🍃</title><link>http://blog.x1661.com</link><description>🌱 I’m currently learning ...</description><copyright>x-Blog🍃</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://blog.x1661.com/logo.svg</url><title>avatar</title><link>http://blog.x1661.com</link></image><lastBuildDate>Sat, 26 Apr 2025 11:45:27 +0000</lastBuildDate><managingEditor>x-Blog🍃</managingEditor><ttl>60</ttl><webMaster>x-Blog🍃</webMaster><item><title>📺️资源导航 持续更新</title><link>http://blog.x1661.com/post/%F0%9F%93%BA%EF%B8%8F-zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</link><description>| 🆔名称       | 🔗链接                          | 🆔名称       | 🔗链接                          | 🆔名称       | 🔗链接                          |
-|--------------|--------------------------------|--------------|--------------------------------|--------------|--------------------------------|
-| 追剧猫       | https://www.feiwang.cc/zjm/    | 看电视       | https://kandianshi.net/        | 蛋蛋兔影院   | https://www.dandantu.cc/       |
-| 注视影视     | https://gaze.run/              | 耐看点播     | https://www.nkdvd.com/         | 看看屋影院   | https://www.kankanwu.cc/       |
-| No视频       | https://www.novipnoad.net/     | 多多视频     | https://www.duoduotv.cc/       | 剧爷爷       | https://www.juyeye.cc/         |
-| 西瓜影院     | https://www.a6club.com/        | 八戒影院     | http://www.bjys.xyz/           | 可可影视     | https://www.kkys03.com/        |
-| 修罗影视     | https://www.xlys01.com/        | 飞飞影视     | https://www.ffys.fun/          | 奈飞工厂     | https://www.netflixgc.com/     |
-| 流光影院     | https://www.gyf.lol/           | Hdmoli       | https://www.hdmoli.pro/        | 网飞猫       | https://www.ncat3.app/         |
-| 皮皮虾影视   | http://www.ppxys.vip/          | 太乙电影     | https://ww88.taieea.sbs/       | 两个BT       | https://www.bttwo.me/          |
-| 低端影视     | https://ddys.pro/              | 饺子影院     | https://www.jiaozi.me/         | 4K影视       | https://www.4kvm.tv/           |
-| LIBVIO       | https://www.libvio.cc/         | 臭蛋蛋影视   | https://cddys1.me/             | 可达影视     | http://www.kedays.top/         |
-| 饭团影视     | https://www.fantuan.vip/       | 午夜剧场     | https://wyjc.life/             | 蓝光影院     | https://www.languang.pro/      |
-| FreeOK       | https://www.freeok.la/         | 看片狂人     | https://www.kpkuang.one/       | 番茄影视     | https://www.yirenmeng.com/     |
-| 1817影视     | https://sn1817.com/            | 极光影视     | https://www.jigys.com/         | 饺子影院     | https://www.jiaozi.me/         |
-| 八号影视     | https://www.bahaotv.com/       | 宅腐TV       | https://www.fuju1.tv/          | 剧爷爷       | https://www.juyeye.cc/         |。</description><guid isPermaLink="true">http://blog.x1661.com/post/%F0%9F%93%BA%EF%B8%8F-zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</guid><pubDate>Sat, 26 Apr 2025 01:01:58 +0000</pubDate></item><item><title>SaaS 回源 加速  CloudFlare Tunnel 访问</title><link>http://blog.x1661.com/post/SaaS%20-hui-yuan-%20-jia-su-%20%20CloudFlare%20Tunnel%20-fang-wen.html</link><description>## 实操步骤
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>x-Blog🍃</title><link>http://blog.x1661.com</link><description>🌱 I’m currently learning ...</description><copyright>x-Blog🍃</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>http://blog.x1661.com/logo.svg</url><title>avatar</title><link>http://blog.x1661.com</link></image><lastBuildDate>Sat, 26 Apr 2025 11:49:56 +0000</lastBuildDate><managingEditor>x-Blog🍃</managingEditor><ttl>60</ttl><webMaster>x-Blog🍃</webMaster><item><title>🎬资源导航 持续更新</title><link>http://blog.x1661.com/post/%F0%9F%8E%AC-zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</link><description># 🎬 影视资源网站导航
+
+| 🆔 名称       | 🔗 链接 | 🆔 名称       | 🔗 链接 |
+|-------------|-------|-------------|-------|
+| 追剧猫 | [点击访问](https://www.feiwang.cc/zjm/) | 看电视 | [点击访问](https://kandianshi.net/) |
+| 注视影视 | [点击访问](https://gaze.run/) | 耐看点播 | [点击访问](https://www.nkdvd.com/) |
+| No视频 | [点击访问](https://www.novipnoad.net/) | 多多视频 | [点击访问](https://www.duoduotv.cc/) |
+| 西瓜影院 | [点击访问](https://www.a6club.com/) | 八戒影院 | [点击访问](http://www.bjys.xyz/) |
+| 修罗影视 | [点击访问](https://www.xlys01.com/) | 飞飞影视 | [点击访问](https://www.ffys.fun/) |
+| 流光影院 | [点击访问](https://www.gyf.lol/) | Hdmoli | [点击访问](https://www.hdmoli.pro/) |
+| 皮皮虾影视 | [点击访问](http://www.ppxys.vip/) | 太乙电影 | [点击访问](https://ww88.taieea.sbs/) |
+| 低端影视 | [点击访问](https://ddys.pro/) | 饺子影院 | [点击访问](https://www.jiaozi.me/) |
+| LIBVIO | [点击访问](https://www.libvio.cc/) | 臭蛋蛋影视 | [点击访问](https://cddys1.me/) |
+| 饭团影视 | [点击访问](https://www.fantuan.vip/) | 午夜剧场 | [点击访问](https://wyjc.life/) |
+| FreeOK | [点击访问](https://www.freeok.la/) | 看片狂人 | [点击访问](https://www.kpkuang.one/) |
+| 1817影视 | [点击访问](https://sn1817.com/) | 极光影视 | [点击访问](https://www.jigys.com/) |
+| 八号影视 | [点击访问](https://www.bahaotv.com/) | 宅腐TV | [点击访问](https://www.fuju1.tv/) |
+| 蛋蛋兔影院 | [点击访问](https://www.dandantu.cc/) | 4K影视 | [点击访问](https://www.4kvm.tv/) |
+| 看看屋影院 | [点击访问](https://www.kankanwu.cc/) | 可达影视 | [点击访问](http://www.kedays.top/) |
+| 剧爷爷 | [点击访问](https://www.juyeye.cc/) | 蓝光影院 | [点击访问](https://www.languang.pro/) |
+| 可可影视 | [点击访问](https://www.kkys03.com/) | 番茄影视 | [点击访问](https://www.yirenmeng.com/) |
+| 奈飞工厂 | [点击访问](https://www.netflixgc.com/) | 饺子影院 | [点击访问](https://www.jiaozi.me/) |
+| 网飞猫 | [点击访问](https://www.ncat3.app/) | 剧爷爷 | [点击访问](https://www.juyeye.cc/) |
+| 两个BT | [点击访问](https://www.bttwo.me/) |  |  |
+
+## 使用说明
+1. 点击名称可直接跳转至对应网站
+2. 部分网站可能需要科学上网
+3. 资源合法性请自行判断
+
+&gt; 📢 提示：收藏本页方便随时访问。</description><guid isPermaLink="true">http://blog.x1661.com/post/%F0%9F%8E%AC-zi-yuan-dao-hang-%20-chi-xu-geng-xin.html</guid><pubDate>Sat, 26 Apr 2025 01:01:58 +0000</pubDate></item><item><title>SaaS 回源 加速  CloudFlare Tunnel 访问</title><link>http://blog.x1661.com/post/SaaS%20-hui-yuan-%20-jia-su-%20%20CloudFlare%20Tunnel%20-fang-wen.html</link><description>## 实操步骤
 ### 1. 隧道配置中添加自定义域名
 1.	登录到 Cloudflare Tunnel 控制台。</description><guid isPermaLink="true">http://blog.x1661.com/post/SaaS%20-hui-yuan-%20-jia-su-%20%20CloudFlare%20Tunnel%20-fang-wen.html</guid><pubDate>Thu, 17 Apr 2025 01:09:41 +0000</pubDate></item><item><title>在线小工具</title><link>http://blog.x1661.com/post/zai-xian-xiao-gong-ju.html</link><description>### **一、 [独特工具箱](https://www.dute.org)**
 
